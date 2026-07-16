@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWS CI/CD Demo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>CI/CD Pipeline using AWS</h1>
+    <div class="container">
+        <h1>🚀 AWS CI/CD Pipeline using GitHub Actions</h1>
 
-<p>This website is automatically deployed using AWS CodePipeline, CodeBuild, and CodeDeploy.</p>
+        <h2>Hello from AWS EC2!</h2>
 
-<button onclick="showMessage()">Click Me</button>
+        <p>
+            This website is hosted on an Amazon EC2 instance using Apache Web Server.
+        </p>
 
-<script src="script.js"></script>
+        <p>
+            Any changes pushed to GitHub are automatically deployed using GitHub Actions.
+        </p>
+
+        <button onclick="showMessage()">Click Me</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
