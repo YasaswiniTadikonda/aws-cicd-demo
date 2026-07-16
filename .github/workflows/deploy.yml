@@ -19,14 +19,15 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: "."
-          target: "/var/www/html"
+          source: "index.html,style.css,script.js"
+          target: "/home/ec2-user/website"
 
-      - name: Restart Apache
+      - name: Deploy Website
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            sudo cp -r /home/ec2-user/website/* /var/www/html/
             sudo systemctl restart httpd
