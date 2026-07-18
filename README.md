@@ -124,21 +124,6 @@ Workflow Steps:
 
 ---
 
-## 📸 Project Demonstration
-
-### Website
-
-(Add screenshot here)
-
-### GitHub Actions
-
-(Add screenshot here)
-
-### AWS EC2
-
-(Add screenshot here)
-
----
 
 ## 📖 Key Learning Outcomes
 
@@ -164,14 +149,6 @@ Workflow Steps:
 - Auto Scaling
 
 ---
-
-## 👩‍💻 Author
-
-**Yasaswini Tadikonda**
-
-B.Tech – Computer Science & Engineering (AI & ML)
-
-Vasireddy Venkatadri Institute of Technology (VVIT)
 
 GitHub: https://github.com/YasaswiniTadikonda
 
